@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/rahuldemocenter/RAHS_GitServerNameWithSapceProject
   gitUsername: rahuldemocenter
   gitBranch: main
+services:
+- serviceName: project.rahs_gitservernamewithsapce.integrations:myNewDebugEFS
+  packages:
+  - name: RAHS_GitServerNameWithSapceProject
+    version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.686
